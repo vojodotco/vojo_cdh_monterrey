@@ -590,7 +590,7 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
-    4 => 4,
+    3 => 3,
     8 => 8,
   );
   $handler->display->display_options['defaults']['pager'] = FALSE;
