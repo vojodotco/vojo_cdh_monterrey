@@ -225,8 +225,8 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['arguments']['group_nid']['not'] = 0;
   $handler->display->display_options['path'] = 'cdh-monterrey/map';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Map';
-  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['title'] = 'Mapa';
+  $handler->display->display_options['menu']['weight'] = '40';
   $handler->display->display_options['menu']['name'] = 'menu-monterrey';
 
   /* Display: CDH Monterrey Featured Stories Block */
@@ -441,8 +441,8 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['path'] = 'cdh-monterrey/about';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'About';
-  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['title'] = 'Nosotros';
+  $handler->display->display_options['menu']['weight'] = '60';
   $handler->display->display_options['menu']['name'] = 'menu-monterrey';
 
   /* Display: Monterrey Story List Page */
@@ -564,8 +564,8 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['path'] = 'cdh-monterrey/browse';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Browse';
-  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['title'] = 'Crónicas';
+  $handler->display->display_options['menu']['weight'] = '30';
   $handler->display->display_options['menu']['name'] = 'menu-monterrey';
 
   /* Display: Monterrey Story Submit Page */
@@ -578,7 +578,7 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['path'] = 'cdh-monterrey/submit';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Submit';
+  $handler->display->display_options['menu']['title'] = 'Cuéntanos';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'menu-monterrey';
 
@@ -707,8 +707,8 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '0';
   $handler->display->display_options['path'] = 'cdh-monterrey/unpublished';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Unpublished';
-  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['title'] = 'Moderar';
+  $handler->display->display_options['menu']['weight'] = '70';
   $handler->display->display_options['menu']['name'] = 'menu-monterrey';
   $translatables['cdhm_group_pages'] = array(
     t('Defaults'),
