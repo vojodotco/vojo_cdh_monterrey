@@ -14,7 +14,7 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $view->base_table = 'node';
   $view->human_name = 'CDH Monterrey Stories';
   $view->core = 6;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Defaults */
@@ -37,55 +37,17 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Field: Location: Latitude */
-  $handler->display->display_options['fields']['latitude']['id'] = 'latitude';
-  $handler->display->display_options['fields']['latitude']['table'] = 'location';
-  $handler->display->display_options['fields']['latitude']['field'] = 'latitude';
-  $handler->display->display_options['fields']['latitude']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['latitude']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['latitude']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['latitude']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['latitude']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['latitude']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['latitude']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['latitude']['empty_zero'] = 0;
-  /* Field: Location: Longitude */
-  $handler->display->display_options['fields']['longitude']['id'] = 'longitude';
-  $handler->display->display_options['fields']['longitude']['table'] = 'location';
-  $handler->display->display_options['fields']['longitude']['field'] = 'longitude';
-  $handler->display->display_options['fields']['longitude']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['longitude']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['longitude']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['longitude']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['longitude']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['longitude']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['longitude']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['longitude']['empty_zero'] = 0;
   /* Field: Node: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'node_revisions';
@@ -95,16 +57,40 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['body']['alter']['html'] = 0;
   $handler->display->display_options['fields']['body']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['body']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['body']['hide_empty'] = 0;
   $handler->display->display_options['fields']['body']['empty_zero'] = 0;
+  /* Field: Content: Map (field_map) */
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['id'] = 'field_map_openlayers_wkt';
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['table'] = 'node_data_field_map';
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['field'] = 'field_map_openlayers_wkt';
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['label'] = 'Map';
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['link_to_node'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['format'] = 'openlayers_wkt';
   /* Sort criterion: Node: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -159,17 +145,17 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'openlayers_data';
   $handler->display->display_options['style_options']['data_source'] = array(
-    'value' => 'other_latlon',
-    'other_lat' => 'latitude',
-    'other_lon' => 'longitude',
-    'openlayers_wkt' => 'title',
+    'value' => 'openlayers_wkt',
+    'other_lat' => 'title',
+    'other_lon' => 'title',
+    'openlayers_wkt' => 'field_map_openlayers_wkt',
     'other_top' => 'title',
     'other_right' => 'title',
     'other_bottom' => 'title',
     'other_left' => 'title',
     'name_field' => 'title',
     'keep_orig_name_field' => 1,
-    'description_field' => '',
+    'description_field' => 'body',
     'keep_orig_desc_field' => 1,
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -256,11 +242,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = 1;
@@ -277,12 +263,12 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '200';
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['body']['alter']['html'] = 0;
   $handler->display->display_options['fields']['body']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['body']['element_default_classes'] = 1;
@@ -307,12 +293,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
     t('more'),
     t('Apply'),
     t('Reset'),
-    t('Sort By'),
+    t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Latitude'),
-    t('Longitude'),
     t('Body'),
+    t('Map'),
     t('All'),
     t('CDH Monterrey Recent Stories List Pane'),
     t('Recent Reports'),
@@ -340,7 +325,7 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $view->base_table = 'node';
   $view->human_name = 'Monterrey Group Pages';
   $view->core = 6;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Defaults */
@@ -366,11 +351,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['body']['alter']['html'] = 1;
   $handler->display->display_options['fields']['body']['element_class'] = 'twelvecol last';
   $handler->display->display_options['fields']['body']['element_label_colon'] = 1;
@@ -403,11 +388,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['body']['alter']['html'] = 0;
   $handler->display->display_options['fields']['body']['element_class'] = 'twelvecol last';
   $handler->display->display_options['fields']['body']['element_label_colon'] = 1;
@@ -477,11 +462,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['field_image_fid']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_image_fid']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_image_fid']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_image_fid']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_image_fid']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['field_image_fid']['element_default_classes'] = 1;
@@ -501,11 +486,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = 1;
@@ -522,12 +507,12 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '150';
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['body']['alter']['html'] = 0;
   $handler->display->display_options['fields']['body']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['body']['element_default_classes'] = 0;
@@ -620,11 +605,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['field_image_fid']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_image_fid']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_image_fid']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['field_image_fid']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_image_fid']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['alter']['html'] = 0;
   $handler->display->display_options['fields']['field_image_fid']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['field_image_fid']['element_default_classes'] = 1;
@@ -644,11 +629,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = 1;
@@ -665,12 +650,12 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '150';
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['body']['alter']['html'] = 0;
   $handler->display->display_options['fields']['body']['element_label_colon'] = 0;
   $handler->display->display_options['fields']['body']['element_default_classes'] = 0;
@@ -716,7 +701,7 @@ function vojo_cdh_monterrey_feature_views_default_views() {
     t('more'),
     t('Apply'),
     t('Reset'),
-    t('Sort By'),
+    t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('Title'),
@@ -743,7 +728,7 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $view->base_table = 'node';
   $view->human_name = 'CDH Monterrey Search';
   $view->core = 6;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Defaults */
@@ -779,11 +764,11 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_type'] = '0';
@@ -800,12 +785,12 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '150';
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = 1;
   $handler->display->display_options['fields']['body']['alter']['html'] = 0;
   $handler->display->display_options['fields']['body']['element_label_type'] = '0';
   $handler->display->display_options['fields']['body']['element_label_colon'] = 1;
@@ -855,7 +840,6 @@ function vojo_cdh_monterrey_feature_views_default_views() {
 
   /* Display: CDH Monterrey Search Page */
   $handler = $view->new_display('page', 'CDH Monterrey Search Page', 'cdhm_search_page');
-  $handler->display->display_options['defaults']['exposed_block'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['path'] = 'cdh-monterrey/search';
   $translatables['cdhm_og_search'] = array(
@@ -863,7 +847,7 @@ function vojo_cdh_monterrey_feature_views_default_views() {
     t('Search'),
     t('more'),
     t('Reset'),
-    t('Sort By'),
+    t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('Select any filter and click on Apply to see results'),
@@ -888,7 +872,7 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $view->base_table = 'node';
   $view->human_name = 'CDH Monterrey Story';
   $view->core = 6;
-  $view->api_version = '3.0-alpha1';
+  $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Defaults */
@@ -909,55 +893,62 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['title']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 1;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
   $handler->display->display_options['fields']['title']['element_label_colon'] = 1;
   $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Field: Location: Latitude */
-  $handler->display->display_options['fields']['latitude']['id'] = 'latitude';
-  $handler->display->display_options['fields']['latitude']['table'] = 'location';
-  $handler->display->display_options['fields']['latitude']['field'] = 'latitude';
-  $handler->display->display_options['fields']['latitude']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['latitude']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['latitude']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['latitude']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['latitude']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['latitude']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['latitude']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['latitude']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['latitude']['empty_zero'] = 0;
-  /* Field: Location: Longitude */
-  $handler->display->display_options['fields']['longitude']['id'] = 'longitude';
-  $handler->display->display_options['fields']['longitude']['table'] = 'location';
-  $handler->display->display_options['fields']['longitude']['field'] = 'longitude';
-  $handler->display->display_options['fields']['longitude']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['longitude']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['longitude']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['longitude']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['longitude']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['longitude']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['longitude']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['longitude']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['longitude']['empty_zero'] = 0;
+  /* Field: Node: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'node_revisions';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['body']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['body']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['body']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['body']['hide_alter_empty'] = 1;
+  /* Field: Content: Map (field_map) */
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['id'] = 'field_map_openlayers_wkt';
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['table'] = 'node_data_field_map';
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['field'] = 'field_map_openlayers_wkt';
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['label'] = 'Map';
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['element_label_colon'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['link_to_node'] = 0;
+  $handler->display->display_options['fields']['field_map_openlayers_wkt']['format'] = 'openlayers_wkt';
   /* Argument: Node: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
@@ -993,17 +984,17 @@ function vojo_cdh_monterrey_feature_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'openlayers_data';
   $handler->display->display_options['style_options']['data_source'] = array(
-    'value' => 'other_latlon',
-    'other_lat' => 'latitude',
-    'other_lon' => 'longitude',
-    'openlayers_wkt' => 'title',
+    'value' => 'openlayers_wkt',
+    'other_lat' => 'title',
+    'other_lon' => 'title',
+    'openlayers_wkt' => 'field_map_openlayers_wkt',
     'other_top' => 'title',
     'other_right' => 'title',
     'other_bottom' => 'title',
     'other_left' => 'title',
     'name_field' => 'title',
     'keep_orig_name_field' => 1,
-    'description_field' => '',
+    'description_field' => 'body',
     'keep_orig_desc_field' => 1,
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -1035,12 +1026,12 @@ function vojo_cdh_monterrey_feature_views_default_views() {
     t('more'),
     t('Apply'),
     t('Reset'),
-    t('Sort By'),
+    t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('Title'),
-    t('Latitude'),
-    t('Longitude'),
+    t('Body'),
+    t('Map'),
     t('All'),
     t('CDH Monterrey Story OL Data'),
     t('The feed for a preset to show the location of CDH Monterrey Story'),
